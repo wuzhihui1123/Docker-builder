@@ -1,8 +1,8 @@
 FROM alpine:3.2
 
-ENV REFRESHED_AT 20151105
+ENV REFRESHED_AT 20181108
 
-RUN apk --update add alpine-sdk xz poppler-dev pango-dev m4 libtool perl autoconf automake coreutils python-dev zlib-dev freetype-dev glib-dev cmake && \
+RUN apk --update add alpine-sdk xz poppler-dev pango-dev m4 libtool perl autoconf automake coreutils python-dev zlib-dev freetype-dev glib-dev cmake libxml2-dev && \
     cd / && \
     git clone https://github.com/BWITS/fontforge.git && \
     cd fontforge && \
